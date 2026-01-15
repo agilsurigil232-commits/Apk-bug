@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Bug UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0b141a;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#e9edef;
+}
+
+.app{
+    width:100%;
+    max-width:420px;
+    background:#111b21;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(37,211,102,0.25);
+}
+
+/* HEADER */
+.header{
+    background:#075e54;
+    padding:18px;
+    text-align:center;
+}
+
+.header h1{
+    font-size:22px;
+    font-weight:bold;
+    color:#e9edef;
+}
+
+.header p{
+    font-size:13px;
+    color:#d1fae5;
+}
+
+/* CONTENT */
+.content{
+    padding:18px;
+}
+
+.card{
+    background:#0b141a;
+    border:1px solid #1f2c33;
+    border-radius:14px;
+    padding:14px;
+    margin-bottom:14px;
+}
+
+.card h3{
+    font-size:15px;
+    color:#25d366;
+    margin-bottom:8px;
+}
+
+.card p{
+    font-size:13px;
+    color:#cfd8dc;
+}
+
+.card input{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #1f2c33;
+    background:#111b21;
+    color:#e9edef;
+    outline:none;
+}
+
+.card input::placeholder{
+    color:#8a9aa5;
+}
+
+/* BUTTON */
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#25d366;
+    color:#0b141a;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:active{
+    transform:scale(0.97);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:12px;
+    font-size:12px;
+    color:#8a9aa5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+    <div class="header">
+        <h1>WA BUG</h1>
+        <p>UI Mockup • WebView APK</p>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h3>Target Number</h3>
+            <input type="text" placeholder="08xxxxxxxxxx">
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p>Tampilan simulasi aplikasi (non-fungsional).</p>
+        </div>
+
+        <button class="btn">START</button>
+    </div>
+
+    <div class="footer">
+        © 2026 WhatsApp Bug UI (Mockup)
+    </div>
+</div>
+
+</body>
+</html>
